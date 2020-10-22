@@ -5,19 +5,62 @@
 body{
     background: blueviolet;
     display: flex;
-    justify-content: center;
-    height:80vh;
+    height:60vh;
 }
 .container{
+    position: absolute;
+    left: 500px;
+    justify-content: center;
     background: white;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    width: 750px;
-    padding: 50px;
-    margin-top: 50px;
+    border-radius: 50px;
+    width: 300px;
+    padding: 45px;
+    height: 200px;
+    margin-top: 0px;
 }
 .container > .row
+{
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+.container1{
+    position: absolute;
+  top: 350px;
+  right: 0;
+    justify-content: center;
+    background: white;
+    display: flex;
+    flex-direction: column;   
+    border-radius: 50px;
+    width: 300px;
+    padding: 50px;
+    margin-top: 50px; 
+    height: 150px;
+}
+.container1 > .row
+{
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+.container2{
+    position: absolute;
+  top: 350px;
+  right: 200;
+    justify-content: center;
+    background: white;
+    display: flex;
+    flex-direction: column;   
+    border-radius: 50px;
+    width: 300px;
+    padding: 50px;
+    margin-top: 50px; 
+    height: 150px;
+}
+.container2 > .row
 {
     width: 100%;
     justify-content: space-evenly;
@@ -42,8 +85,14 @@ body{
     border-radius: 50%;
     border: 2px solid bisque;
 }
+#circle{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+}
 .score{
-    font-size: xx-large;
+    font-size: large;
     width: 100px;
     justify-content: space-evenly;
 }
@@ -52,31 +101,30 @@ body{
     
 }
 .round-shoots{
-    font-size: xx-large;
-    width: 200px;
+    font-size: large;
+    width: 150px;
     justify-content: space-evenly;
 }
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 #strike{
+    display: block;
+    margin: auto;
     border: none;
     border-radius: 25px;
     font-size: large;
     background: linear-gradient(135deg,red,yellow);
-    width: 300px;
+    width: 150px;
     color: white;
     padding: 10px;
     margin-top:50px;
     margin-bottom: -50px;
-    outline:none;
+    outline:none; 
+    
 }
-#try{
-    border: none;
-    border-radius: 25px;
-    font-size: large;
-    background: linear-gradient(100deg,red,yellow);
-    width: 100px;
-    color: white;
-    padding: 10px;
-    margin-top:50px;
-    margin-bottom: -50px;
-    outline:none;
-}
+
